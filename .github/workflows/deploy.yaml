@@ -3,7 +3,7 @@ name: 🚀 Build and Deploy React + Vite to cPanel
 on:
   push:
     branches:
-      - main  # ou master - altere conforme seu branch principal
+      - master
   workflow_dispatch:  # Permite executar manualmente
 
 jobs:
