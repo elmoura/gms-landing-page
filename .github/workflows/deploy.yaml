@@ -11,6 +11,7 @@ jobs:
     name: 📦 Build & Deploy
     runs-on: ubuntu-latest
 
+
     steps:
       # 1. Baixar o código do repositório
       - name: 📚 Checkout code
@@ -43,6 +44,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          secure: true
           local-dir: ./dist/      # Pasta de build do Vite
           server-dir: ./          # Diretório raiz do FTP
           # Excluir arquivos desnecessários
