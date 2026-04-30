@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           secure: true
           local-dir: ./dist/      # Pasta de build do Vite
-          server-dir: public_html/ci/
+          server-dir: ./
           # Excluir arquivos desnecessários
           exclude: |
             **/.git*
